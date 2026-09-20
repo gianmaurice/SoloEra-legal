@@ -100,18 +100,19 @@
     <a class="back" href="index.html">&larr; Solo Era</a>
 
 <h1>Privacy Policy</h1>
-<p class="updated">Last updated: 19 August 2026</p>
+<p class="updated">Last updated: 20 September 2026</p>
 <h2>The short version</h2>
 <p>Solo Era needs an account, and the account holds your data. Your journal entries, your photos, your progress and your answers to the setup questions are stored on our backend so they come back whole on a new phone. Your phone keeps a copy so the app works offline.</p>
-<p>We do not sell anything about you, we do not track you across other apps or websites, and there is no advertising or analytics SDK in the app.</p>
+<p>We do not sell anything about you, we do not track you across other apps or websites, and there is no advertising SDK in the app. RevenueCat provides subscription and paywall measurement as described below; we do not use a separate general-purpose analytics SDK.</p>
 <h2>What we store</h2>
 <table><thead><tr><th>What</th><th>Why</th></tr></thead><tbody>
-<tr><td>Your email address</td><td>To sign you in. It is the only way we identify you.</td></tr>
-<tr><td>Your name</td><td>Only if you use Sign in with Apple <em>and</em> Apple chooses to send it, which happens once, the first time.</td></tr>
-<tr><td>Your journal entries — the mission, the date, both anxiety ratings, and any note you wrote</td><td>So they come back on a new phone, and so the app can draw how your ratings change over months.</td></tr>
+<tr><td>Your email address</td><td>To sign you in, together with your internal account identifier.</td></tr>
+<tr><td>Your name</td><td>The display name you enter or edit, or a name provided by Sign in with Apple, to personalise your pass, screens and reminders.</td></tr>
+<tr><td>Your journal entries — mission and date, before-and-after nervousity ratings, notes, and titles you give to your own entries</td><td>So they come back on a new phone, and so the app can draw how your ratings change over months.</td></tr>
 <tr><td><strong>Your photos</strong> — the picture on a journal entry, downscaled before it leaves your phone</td><td>So an entry comes back with its picture. Each account can read and write only its own photos; nobody else's account can see yours.</td></tr>
 <tr><td>Your progress — XP, level, streak, and which missions you have completed</td><td>So a new phone shows the level, the streak and the history you built, instead of starting you over.</td></tr>
-<tr><td>Your answers to the setup questions, including where you heard about Solo Era</td><td>To understand who is using the app and how people find it.</td></tr>
+<tr><td>Your setup answers — gender if provided, discovery channel, solo activities, confidence and obstacles, goals, available time and reminder preferences</td><td>To personalise your starting point and understand how people find and use Solo Era.</td></tr>
+<tr><td>Your unique Solo Pass code (SE- followed by six digits)</td><td>To keep a stable pass identifier when your display name changes. It is not a password or permission to read your account.</td></tr>
 <tr><td>Your own custom missions</td><td>So the missions you wrote are yours on any device, not only on the one you wrote them on.</td></tr>
 </tbody></table>
 <h2>What we never store</h2>
@@ -124,16 +125,18 @@
 <p>On <a href="https://supabase.com">Supabase</a>, on servers in Zurich, Switzerland. Supabase is our data processor and stores this on our behalf — the rows in a database and the photos in a private storage bucket.</p>
 <p>Every row and every photo is locked to your account at the database level, so one account cannot read another's. The developer can technically access the database and the storage as its administrator, and does so only to keep the service running.</p>
 <h2>Purchases</h2>
-<p>Subscriptions are handled by Apple and by <a href="https://www.revenuecat.com">RevenueCat</a>, which tells the app whether your subscription is active. RevenueCat receives an identifier for your account and information about your subscription. <strong>We never see your payment details</strong> — those stay with Apple.</p>
+<p>Subscriptions are handled by Apple and by <a href="https://www.revenuecat.com">RevenueCat</a>, which tells the app whether your subscription is active. RevenueCat receives an identifier for your account, subscription and transaction information, and technical information such as device and operating-system details. <strong>We never see your payment details</strong> — those stay with Apple. RevenueCat also records paywall views and subscription purchase and restoration events so we can evaluate paywall conversion and compare offers. This does not include your journal notes or photos. The paywall uses your display name, pass code and selected weekly time to personalise what you see. Prices, trial availability and renewal terms are shown for your selected offer before purchase.</p>
 <h2>Email</h2>
 <p>The code that signs you in is sent by <a href="https://resend.com">Resend</a> on our behalf. They process your email address to deliver it.</p>
 <h2>Notifications</h2>
-<p>The app schedules local reminders on your device — the weekly mission, and a timer when a mission has one. They are generated entirely on-device and are not sent through any server.</p>
+<p>The app schedules local reminders on your device — the weekly mission, and a timer when a mission has one. They are generated entirely on-device and are not sent through any push-notification server. If you allow notifications, a reminder can show your display name and mission title on your lock screen. You can change reminder preferences in the app and notification previews in iOS Settings.</p>
+<h2>Sharing</h2>
+<p>Sharing a pass, completed mission or journal note opens the iOS share sheet. You choose the recipient or app. The shared content may include your name, pass code, mission, ratings, notes or an attached photo, depending on the item you choose. Sharing is optional; we do not automatically publish your journal or create a public profile. The destination you choose handles its copy under its own privacy practices.</p>
 <h2>How long we keep it</h2>
-<p>For as long as you have an account. Delete your account and it goes — see below.</p>
+<p>We keep your account content while you have an account. Account deletion removes it from our active account database and storage. Payment providers maintain their own transaction records; deleting Solo Era does not erase Apple purchase records or automatically cancel an App Store subscription.</p>
 <h2>Deleting your account</h2>
 <p><strong>Your account (top right) → Delete account</strong>, inside the app.</p>
-<p>That deletes your account and everything stored with it: your journal, your photos, your progress, your setup answers and your email address. It cannot be undone. The copy on your phone is cleared at the same time.</p>
+<p>That deletes your account and everything stored with it: your journal, your photos, your progress, your setup answers and your email address. It cannot be undone. The copy on your phone is cleared at the same time. To request help with purchase-related data held by our subscription provider, contact <a href="mailto:support@soloera.app">support@soloera.app</a>. Manage or cancel your subscription separately in your Apple account subscription settings.</p>
 <h2>Signing out</h2>
 <p>Signing out clears the copy on your phone. Nothing is lost — your account still holds it, and signing back in brings it back.</p>
 <h2>Your rights</h2>
